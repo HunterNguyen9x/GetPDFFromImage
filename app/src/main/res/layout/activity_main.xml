@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:scrollbars="vertical"
+    android:background="@drawable/round"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/prBar"
+        android:padding="180dp"
+        android:clickable="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/bo_goc"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập link truyện cần cover"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonbogoc"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:lines="1"
+            android:id="@+id/edtLink"
+            android:hint="Link....."
+            android:textColorHint="#D5CFCF"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tải ảnh"
+            android:layout_gravity="center"
+            android:textColor="#FFF"
+            android:id="@+id/btnGetPDF"
+            android:background="@drawable/bo_goc_button"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bogoc2"
+                android:layout_margin="20dp"
+                android:textSize="13sp"
+                android:id="@+id/edtOutImageLink"
+                android:gravity="left"
+                android:scrollbars="vertical"
+                android:layout_weight="0.9"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bo_goc_button"
+                android:text="Get list link Image"
+                android:id="@+id/btnDownload"
+                android:layout_weight="0.1"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
